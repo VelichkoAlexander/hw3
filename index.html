@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>HW3 demo</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+<style>
+#two{position: absolute; display: block; opacity: .5;}
+img{ display: block;}
+.one{width: 649px; height: 532px; border: 1px solid black;}
+</style>
+</head>
+<body>
+
+<div id="files" class="files">
+<div class="one">
+		<div id="two"></div>
+</div>
+</div>
+<form >
+<input id="fileupload1" type="file" name="files[]" data-url="server/php/" multiple>
+</form>
+<form >
+<input id="fileupload2" type="file" name="files[]" data-url="server/php/" multiple>
+</form>
+<label for="pos_x">X</label>
+<input id="pos_x" name="val_pos_x" value="0">
+<br>
+<label for="pos_y">Y</label>
+<input id="pos_y" name="val_pos_y" value="0">
+<p>
+  <input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
+</p>
+<button id="but1">alex</button>
+ 
+<div id="slider"></div>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<!-- The jQuery UI widget factory, can be omitted if jQuery UI is already included -->
+<script src="js/vendor/jquery.ui.widget.js"></script>
+<!-- The Load Image plugin is included for the preview images and image resizing functionality -->
+<script src="https://blueimp.github.io/JavaScript-Load-Image/js/load-image.all.min.js"></script>
+<!-- The Canvas to Blob plugin is included for image resizing functionality -->
+<script src="https://blueimp.github.io/JavaScript-Canvas-to-Blob/js/canvas-to-blob.min.js"></script>
+<!-- The Iframe Transport is required for browsers without support for XHR file uploads -->
+<script src="js/jquery.iframe-transport.js"></script>
+<!-- The basic File Upload plugin -->
+<script src="js/jquery.fileupload.js"></script>
+<!-- The File Upload processing plugin -->
+<script src="js/jquery.fileupload-process.js"></script>
+<!-- The File Upload image preview & resize plugin -->
+<script src="js/jquery.fileupload-image.js"></script>
+<script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+<script src="js/main.js"></script>
+</body> 
+</html>
+

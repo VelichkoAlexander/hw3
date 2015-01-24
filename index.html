@@ -1,38 +1,118 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<meta charset="utf-8">
-<title>HW3 demo</title>
+    <meta charset="utf-8">
+    <title>HW3 demo</title>
     <link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
-<style>
-#two{position: absolute; display: block; opacity: .5;}
-img{ display: block;}
-.one{width: 649px; height: 532px; border: 1px solid black;}
-</style>
+    <style>
+        #two {
+            position: absolute;
+            display: block;
+            opacity: .5;
+            left: 9px;
+            top: 9px;
+        }
+
+
+
+        /*.one{width: 649px; height: 532px;background:url('img/main.png')no-repeat;}*/
+        .wrapp-one {
+            width: 650px;
+            height: 533px;
+            border: 1px solid black;
+            position: relative;
+
+        }
+    .one{
+         }
+        .one img{
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+        }
+
+
+    </style>
 </head>
 <body>
 
 <div id="files" class="files">
-<div class="one">
-		<div id="two"></div>
+    <div class="wrapp-one">
+        <div class="one">
+            <img src="img/main.png" alt="main"/>
+        </div>
+        <div id="two">
+            <img src="img/whatermark.png" alt="wm"/>
+        </div>
+
+    </div>
 </div>
 </div>
-<form >
-<input id="fileupload1" type="file" name="files[]" data-url="server/php/" multiple>
+<form>
+    <input id="fileupload1" type="file" name="files[]" data-url="server/php/" multiple>
 </form>
-<form >
-<input id="fileupload2" type="file" name="files[]" data-url="server/php/" multiple>
+<form>
+    <input id="fileupload2" type="file" name="files[]" data-url="server/php/" multiple>
 </form>
 <label for="pos_x">X</label>
 <input id="pos_x" name="val_pos_x" value="0">
 <br>
 <label for="pos_y">Y</label>
 <input id="pos_y" name="val_pos_y" value="0">
+
 <p>
-  <input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
+    <input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
 </p>
-<button id="but1">alex</button>
- 
+<!--<button>change pos</button>-->
+<!--<button>change pos</button>-->
+<!--<button>change pos</button>-->
+<!--<button>change pos</button>-->
+<!--<button>change pos</button>-->
+<!--<button>change pos</button>-->
+<!--<button>change pos</button>-->
+<!--<button>change pos</button>-->
+<!--<button>change pos</button>-->
+<table>
+    <tbody>
+    <tr>
+        <td>
+            <button>change pos</button>
+        </td>
+        <td>
+            <button>change pos</button>
+        </td>
+        <td>
+            <button>change pos</button>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button>change pos</button>
+        </td>
+        <td>
+            <button>change pos</button>
+        </td>
+        <td>
+            <button>change pos</button>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button>change pos</button>
+        </td>
+        <td>
+            <button>change pos</button>
+        </td>
+        <td>
+            <button>change pos</button>
+        </td>
+    </tr>
+
+    </tbody>
+</table>
 <div id="slider"></div>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 <!-- The jQuery UI widget factory, can be omitted if jQuery UI is already included -->
@@ -51,6 +131,6 @@ img{ display: block;}
 <script src="js/jquery.fileupload-image.js"></script>
 <script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
 <script src="js/main.js"></script>
-</body> 
+</body>
 </html>
 

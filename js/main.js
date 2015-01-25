@@ -97,15 +97,24 @@
             $("#pos_x, #pos_y").spinner({
                 step: 1,
                 min: 0,
-                change: update_position,
-                stop: update_position
-            });
-            function update_position() {
-                $("#two").css('left', '' + $("#pos_x").spinner("value") + 'px');
-                $("#two").css('top', '' + $("#pos_y").spinner("value") + 'px');
-            }
-
+                change: app.Get_Position,
+                stop: app.Get_Position
+            })
+        },
+        Get_Position: function () {
+            var
+                pos_x = $("#pos_x").spinner("value"),
+                pos_y = $("#pos_y").spinner("value");
+            app.Update_Position(pos_x, pos_y);
+        },
+        Update_Position: function (pos_x, pos_y) {
+            var
+                watermark = $("#two");
+            watermark.css('left', '' + pos_x + 'px');
+            watermark.css('top', '' + pos_y + 'px');
         }
+
+
     };
 
     app.initialize();

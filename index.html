@@ -11,9 +11,12 @@
             opacity: .5;
             left: 9px;
             top: 9px;
+
         }
 
-
+        .trans {
+            transition: all 0.5s ease;
+        }
 
         /*.one{width: 649px; height: 532px;background:url('img/main.png')no-repeat;}*/
         .wrapp-one {
@@ -23,9 +26,11 @@
             position: relative;
 
         }
-    .one{
-         }
-        .one img{
+
+        .one {
+        }
+
+        .one img {
             position: absolute;
             top: 0;
             right: 0;
@@ -45,7 +50,7 @@
             <img src="img/main.png" alt="main"/>
         </div>
         <div id="two">
-            <img src="img/whatermark.png" alt="wm"/>
+            <img class="trans" src="img/whatermark.png" alt="wm"/>
         </div>
 
     </div>
@@ -63,56 +68,51 @@
 <label for="pos_y">Y</label>
 <input id="pos_y" name="val_pos_y" value="0">
 
+<div class="buttons">
+    <table>
+        <tbody>
+        <tr>
+            <td>
+                <button attrX="0" attrY="0">change pos</button>
+            </td>
+            <td>
+                <button attrX="217" attrY="0">change pos</button>
+            </td>
+            <td>
+                <button attrX="434" attrY="0">change pos</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button attrX="0" attrY="178">change pos</button>
+            </td>
+            <td>
+                <button attrX="217" attrY="178">change pos</button>
+            </td>
+            <td>
+                <button attrX="434" attrY="178">change pos</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button attrX="0" attrY="306">change pos</button>
+            </td>
+            <td>
+                <button attrX="217" attrY="306">change pos</button>
+            </td>
+            <td>
+                <button attrX="434" attrY="306">change pos</button>
+            </td>
+        </tr>
+
+        </tbody>
+    </table>
+</div>
 <p>
     <input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
 </p>
-<!--<button>change pos</button>-->
-<!--<button>change pos</button>-->
-<!--<button>change pos</button>-->
-<!--<button>change pos</button>-->
-<!--<button>change pos</button>-->
-<!--<button>change pos</button>-->
-<!--<button>change pos</button>-->
-<!--<button>change pos</button>-->
-<!--<button>change pos</button>-->
-<table>
-    <tbody>
-    <tr>
-        <td>
-            <button>change pos</button>
-        </td>
-        <td>
-            <button>change pos</button>
-        </td>
-        <td>
-            <button>change pos</button>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <button>change pos</button>
-        </td>
-        <td>
-            <button>change pos</button>
-        </td>
-        <td>
-            <button>change pos</button>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <button>change pos</button>
-        </td>
-        <td>
-            <button>change pos</button>
-        </td>
-        <td>
-            <button>change pos</button>
-        </td>
-    </tr>
+<button id="download">DOwnload</button>
 
-    </tbody>
-</table>
 <div id="slider"></div>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 <!-- The jQuery UI widget factory, can be omitted if jQuery UI is already included -->

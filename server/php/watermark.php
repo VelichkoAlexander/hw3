@@ -16,13 +16,13 @@ $marge_right = 10;
 $marge_bottom = 10;
 $sx = imagesx($stamp);
 $sy = imagesy($stamp);
-$stamp->setImageOpacity(0.7);
+//$stamp->setImageOpacity(0.7);
 // Copy the stamp image onto our photo using the margin offsets and the photo 
 // width to calculate positioning of the stamp. 
 imagecopy($im, $stamp, imagesx($im) - $sx - $marge_right, imagesy($im) - $sy - $marge_bottom, 0, 0, imagesx($stamp), imagesy($stamp));
 
 // Output and free memory
-header('Content-type: image/png');
-imagepng($im);
+//header('Content-type: image/png');
+imagepng($im, "img.png");
 imagedestroy($im);
 ?>

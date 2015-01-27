@@ -24,14 +24,15 @@
             var
                 bigImg = $('.one img').attr('src'),
                 littleImg = $('#two img').attr('src'),
-                pos_x = $("#pos_x").spinner("value"),
-                pos_y = $("#pos_y").spinner("value"),
+                position=$('#two').position(),
+                pos_x = position.left,
+                pos_y = position.top,
                 opacity = $("#slider").slider("value");
             console.log(bigImg, littleImg, pos_x, pos_y, opacity);
 
 
             $.ajax({
-                url: 'server\php\watermark.php',
+                url: 'server/php/watermark.php',
                 type: 'POST',
                 data: {bigimg: bigImg, stamp: littleImg, posX: pos_x, posY: pos_y, optic: opacity}
             })
